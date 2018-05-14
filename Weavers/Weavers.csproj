@@ -1,11 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FodyCecil" Version="3.0.1" />
     <PackageReference Include="FodyHelpers" Version="3.0.3" />
   </ItemGroup>
 
@@ -18,7 +17,7 @@
     </ItemGroup>
     <ILRepack LibraryPath="@(LibraryPath)" Parallel="true" Internalize="true" InputAssemblies="@(InputAssemblies)" TargetKind="Dll" OutputFile="$(OutputPath)\$(AssemblyName).dll" />
   </Target> -->
-  
+
   <!-- <Target Name="Copy" AfterTargets="Build">
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SolutionDir)\..\stupid-circus-core\Weavers\bin" />
   </Target> -->
